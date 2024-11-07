@@ -1,0 +1,22 @@
+const userNotificationfetch = async () => {
+    try {
+      const responce = await axios.get(
+        `http://${process.env.REACT_APP_App_Ip}/register_view/${admin_id}/`
+      );
+      setTotalUser(responce.data.items.length);
+      setRegestereduser(responce.data.items);
+      console.log(responce.data.items);
+    } catch (error) {
+      console.log(error);
+      setUserNotificationerror(error);
+    }
+  };
+
+  useEffect(() => {
+    userNotificationfetch();
+    // eslint-disable-next-line
+  }, []);
+
+
+  const registereduser,setregistereduser=usestate(0);
+  

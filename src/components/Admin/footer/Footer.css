@@ -1,0 +1,35 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    z-index: 10;
+}
+.footerLogo{
+    height: 40px;
+    width: 35px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-left: 10px;
+
+}
+
+
+ @media (max-width:768px) {
+    .footer{
+        position: fixed;
+        background-color: white;
+        bottom: 0;
+        width: 100vw;
+        height: 50px;
+        z-index: 10;
+        margin-left: 60px;
+    }
+    .copyright{
+     font-size: 13px;
+    }
+    .footerdiv{
+        margin-right: 10%;
+    }
+
+ }

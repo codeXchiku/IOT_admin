@@ -1,0 +1,79 @@
+i {
+  margin: 0;
+}
+/* sidenavbar */
+.side {
+  background-color: #00216e;
+  position: fixed;
+  height: 100%;
+  width: 65px;
+  top: 0px;
+  z-index: 10;
+}
+.logos {
+  margin-top: 102px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.sideimg:hover {
+  background-color: #ecf5fba8;
+  cursor: pointer;
+}
+
+/* end sidenavbar */
+
+/* topnavbar start*/
+.topnavbar {
+  /* height: 57px; */
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: 1;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+  background-color: rgb(234, 236, 238);
+  cursor: pointer;
+}
+/* top navbarend */
+
+/* dropdown menu */
+.dropclass{
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0, 0,0.1);
+    margin-top: -15px;
+    border:none;
+    background: linear-gradient(to bottom, rgba(201, 232, 255, 1), rgba(201, 232, 255, 0.4));
+
+}
+
+
+
+.form-check-input:checked {
+  background-color: #00ff00; 
+}
+
+.form-check-input:not(:checked) {
+  background-color: #ff0000; 
+}
+
+@media(max-width:768px){
+  .side {
+
+    z-index: 2;
+  }
+}
+@media(max-width:980px){
+ .model.calendermodel{
+  width: 95% !important;              
+  }
+}
+
+

@@ -1,0 +1,23 @@
+@media(max-width:896px){
+    .tables{
+        display: flex;
+        flex-direction: column !important;
+
+    }
+    .table1,.table2{
+        width:100% !important;
+    }
+    .table2{
+        margin:10% 0 3% 0 !important;   
+     }
+}
+
+@media(max-width:768px){  
+    .model.accedit{
+       width: 95% !important;
+       
+   }
+   .accounteditmodaldv{
+       margin-left: 5px !important;
+   }
+}

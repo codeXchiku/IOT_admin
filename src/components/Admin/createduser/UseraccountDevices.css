@@ -1,0 +1,86 @@
+
+.btn-3d {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2), 
+                0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  }
+  
+  .btn-3d:active {
+    transform: translateY(8px);
+  
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2), 
+                0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-success.btn-3d {
+    background-color: #28a745;
+  }
+  
+  .btn-danger.btn-3d {
+    background-color: #dc3545;
+  }
+  
+
+
+
+
+@media(max-width:768px){
+    .cards{
+        padding: 7px;
+    }
+    .deviceaddmap{
+        width: 99% !important;
+        height: 300px !important;
+    }
+    
+}
+@media(max-width:671px){
+    .card{
+        width:360px !important;
+        
+    }
+    .cards{
+        justify-content: center ;
+    }
+   
+}
+
+@media(max-width:360px){
+    .control-btn-container{
+        display: flex;
+        margin-top: 0px !important;
+    }
+    .control-btn{
+        padding: 0px !important;
+        height: max-content;
+        font-weight: 400 !important;
+    }
+    .card{
+        font-size: 16px !important;
+        padding-bottom: 5px !important;
+    }
+}
+
+
+
+
+/* Start for map responsive */
+
+@media(max-width:577px){
+    .searchbar{
+        width: 300px !important;
+    }
+}
+
+
+
+/* End for map responsive */

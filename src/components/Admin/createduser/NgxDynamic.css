@@ -1,0 +1,24 @@
+@media(max-width:982px){
+  
+    .adminsidechart{
+       width: 100% !important;
+       margin-top: 10px;
+}
+
+    }
+    
+
+  
+  @media (max-width: 768px) {
+    .adminsidechart {
+      height: 40vh !important; /* Adjust height for smaller screens */
+      margin-top: 20px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .adminsidechart {
+      height: 30vh !important; /* Adjust height for even smaller screens */
+      margin-top: 20px !important;
+    }
+  }

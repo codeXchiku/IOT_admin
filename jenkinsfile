@@ -1,0 +1,50 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/jyotiranjanpradhan/Accuaculture-frontend.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                tool name: 'NodeJS', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+                script {
+                    try {
+                        sh 'npm install'
+                    } catch (err) {
+                        currentBuild.result = 'FAILURE'
+                        error "Failed to install npm dependencies: ${err}"
+                    }
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    try {
+                        sh 'npm run build' // Build your frontend application
+                    } catch (err) {
+                        currentBuild.result = 'FAILURE'
+                        error "Failed to build frontend: ${err}"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Frontend build completed successfully!'
+            // Optionally trigger deployment here
+            // sh 'npm run deploy'
+        }
+        failure {
+            echo 'Frontend build failed!'
+            // Optionally send notification or take corrective actions
+        }
+    }
+}

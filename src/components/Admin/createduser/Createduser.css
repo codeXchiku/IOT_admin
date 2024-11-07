@@ -1,0 +1,35 @@
+/* for all adminside contetnt page classname styling for sidebar on and off  */
+.createdusercontent {
+  margin-top: 7px;
+  
+}
+
+.createdusercontent.closed {
+  margin-left: 110px;
+}
+
+.createdusercontent.open {
+  margin-left: 280px;
+}
+
+@media (max-width: 941px) {
+  .createdusercontent  {
+    margin-left: 66px !important;
+    margin-bottom: 44px;
+  }
+  .model.newaccount{
+font-size: 15px !important;
+
+width: 98%;
+  }
+  .searchbutton{
+    margin-top: 20px;
+  }
+  .mapaddacc{
+    height:300px !important;
+  }
+  .addaccmodaldiv{
+    margin-left: 10px !important;
+  }
+  
+}
